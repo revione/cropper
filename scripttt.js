@@ -139,8 +139,6 @@ window.onload = function () {
       file = files[0]
 
       if (/^image\/\w+/.test(file.type)) {
-        uploadedImageType = file.type
-
         if (uploadedImageURL) {
           URL.revokeObjectURL(uploadedImageURL)
         }
