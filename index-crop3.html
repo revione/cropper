@@ -33,84 +33,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="navbar navbar-light navbar-expand-md">
-      <div class="container">
-        <a class="navbar-brand" href="./">Cropper.js</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar-collapse"
-          aria-controls="navbar-collapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbar-collapse"
-          role="navigation"
-        >
-          <nav class="nav navbar-nav">
-            <a
-              class="nav-link"
-              href="https://github.com/fengyuanchen/cropperjs/blob/master/README.md"
-              data-toggle="tooltip"
-              title="View the documentation"
-              >Docs</a
-            >
-            <a
-              class="nav-link"
-              href="https://fengyuanchen.github.io/photo-editor"
-              data-toggle="tooltip"
-              title="An advanced example of Cropper.js"
-              >Photo Editor</a
-            >
-            <a
-              class="nav-link"
-              href="https://github.com/fengyuanchen/cropperjs"
-              data-toggle="tooltip"
-              title="View the GitHub project"
-              >GitHub</a
-            >
-            <a
-              class="nav-link"
-              href="https://fengyuanchen.github.io"
-              data-toggle="tooltip"
-              title="More projects"
-              >More</a
-            >
-            <a
-              class="nav-link"
-              href="http://chenfengyuan.com"
-              data-toggle="tooltip"
-              title="About the author"
-              >About</a
-            >
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <!-- Jumbotron -->
-    <div class="jumbotron bg-primary text-white rounded-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <h1>Cropper.js <small class="h6">v1.1.3</small></h1>
-            <p class="lead">JavaScript image cropper.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Content -->
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
-          <h3>Demo:</h3>
+        <div class="col-md-12">
+          <!-- <h3>Demo:</h3> -->
           <div class="img-container">
             <img
               src="https://fengyuanchen.github.io/cropperjs/images/picture.jpg"
@@ -118,54 +45,11 @@
             />
           </div>
         </div>
-        <div class="col-md-3">
-          <!-- <h3>Preview:</h3> -->
-          <div class="docs-preview clearfix">
-            <div class="img-preview preview-lg"></div>
-            <div class="img-preview preview-md"></div>
-            <div class="img-preview preview-sm"></div>
-            <div class="img-preview preview-xs"></div>
-          </div>
-        </div>
       </div>
 
-      <h3>Actions</h3>
       <div class="row" id="actions">
-        <div class="col-md-9 docs-buttons">
-          <h3>Methods - Buttons</h3>
-          <!-- <h3>Toolbar:</h3> -->
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="setDragMode"
-              data-option="move"
-              title="Move"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title='cropper.setDragMode("move")'
-              >
-                <span class="fa fa-arrows"></span>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="setDragMode"
-              data-option="crop"
-              title="Crop"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title='cropper.setDragMode("crop")'
-              >
-                <span class="fa fa-crop"></span>
-              </span>
-            </button>
-          </div>
+        <div class="col-md-12 docs-buttons center">
+          <!-- <h3>Methods - Buttons</h3> -->
 
           <div class="btn-group">
             <button
@@ -334,82 +218,6 @@
           </div>
 
           <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="crop"
-              title="Crop"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title="cropper.crop()"
-              >
-                <span class="fa fa-check"></span>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="clear"
-              title="Clear"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title="cropper.clear()"
-              >
-                <span class="fa fa-remove"></span>
-              </span>
-            </button>
-          </div>
-
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="disable"
-              title="Disable"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title="cropper.disable()"
-              >
-                <span class="fa fa-lock"></span>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="enable"
-              title="Enable"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title="cropper.enable()"
-              >
-                <span class="fa fa-unlock"></span>
-              </span>
-            </button>
-          </div>
-
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="reset"
-              title="Reset"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title="cropper.reset()"
-              >
-                <span class="fa fa-refresh"></span>
-              </span>
-            </button>
             <label
               class="btn btn-primary btn-upload"
               for="inputImage"
@@ -430,48 +238,11 @@
                 <span class="fa fa-upload"></span>
               </span>
             </label>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-method="destroy"
-              title="Destroy"
-            >
-              <span
-                class="docs-tooltip"
-                data-toggle="tooltip"
-                title="cropper.destroy()"
-              >
-                <span class="fa fa-power-off"></span>
-              </span>
-            </button>
           </div>
         </div>
         <!-- /.docs-buttons -->
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p class="heart"></p>
-        <nav class="nav flex-wrap justify-content-center mb-3">
-          <a class="nav-link" href="https://github.com/fengyuanchen/cropperjs"
-            >GitHub</a
-          >
-          <a
-            class="nav-link"
-            href="https://github.com/fengyuanchen/cropperjs/tree/master/examples"
-            >Examples</a
-          >
-          <a
-            class="nav-link"
-            href="https://github.com/fengyuanchen/cropperjs/blob/master/LICENSE"
-            >License</a
-          >
-          <a class="nav-link" href="http://chenfengyuan.com">About</a>
-        </nav>
-      </div>
-    </footer>
 
     <div>
       <script
@@ -501,7 +272,7 @@
         referrerpolicy="no-referrer"
       ></script>
 
-      <script src="scriptt.js"></script>
+      <script src="scripttt.js"></script>
     </div>
   </body>
 </html>
